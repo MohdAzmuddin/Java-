@@ -1,0 +1,36 @@
+| Feature               | Stack Memory                             | Heap Memory                        |
+| --------------------- | ---------------------------------------- | ---------------------------------- |
+| **Storage**           | Stores local variables, function calls   | Stores objects and dynamic data    |
+| **Memory Allocation** | Automatic (by compiler)                  | Manual / dynamic (by programmer)   |
+| **Speed**             | Faster ⚡                                 | Slower 🐢                          |
+| **Size**              | Limited                                  | Larger                             |
+| **Access**            | Direct access (LIFO – Last In First Out) | Access via pointers/reference      |
+| **Management**        | Automatically managed                    | Needs manual or garbage collection |
+| **Example**           | `int a = 10;`                            | `new`, `malloc()`                  |
+
+### 🧠 Stack Memory
+
+* Function calls + local variables store होते हैं
+* Automatically create और delete होता है
+* Very fast
+void main() {
+   int x = 5;  // stored in stack
+}
+### 🧠 Heap Memory
+
+* Large data / objects store होते हैं
+* Programmer allocate करता है (`new`, `malloc`)
+* Slow but flexible
+
+👉 Example:
+
+```c
+int *p = (int*) malloc(sizeof(int)); // stored in heap
+
+## 🔹 Real-Life Example
+
+* **Stack** = Books stacked one above another 📚
+  → Last book added = First removed
+
+* **Heap** = Open ground 🏞️
+  → You can store anything anywhere
